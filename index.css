@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins","sans-serif";
+    color:white;
+}
+.container{
+    background-color: #07283d;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    position:relative;
+}
+.boxes{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position:relative;
+}
+.box{
+    border:1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    color:white;
+    cursor:pointer;
+}
+button{
+    padding:10px 30px;
+    border-radius: 10px;
+    border:none;
+    cursor:pointer;
+    font-size: 1.5vw;
+    color:#191919;
+    font-weight: 700;
+}
+h2{
+    /* margin-top: 8%; */
+    font-size: 2.5vw;
+}
+h1{
+    font-size: 2.5vw;
+}
+.brL{
+    border-left: 0px;
+}
+.brR{
+    border-right: 0px;
+}
+.brT{
+    border-top: 0px;
+}
+.brB{
+    border-bottom: 0px;
+}
+
+/* -----------------------Winner GiF------------------------- */
+.winGIF{
+    width:20vw;
+    position:absolute;
+    right:7vw;
+    top:10vw;
+    display:none;
+    transition:display 2s ease-in;
+}
+
+@media (max-width:770px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap:0px;
+    }
+    .boxes{
+        display: grid;
+        grid-template-rows: repeat(3,25vw);
+        grid-template-columns: repeat(3, 25vw);
+        position:relative;
+        margin-bottom: 8%;
+    }
+    button{
+        padding:10px 30px;
+        border-radius: 10px;
+        border:none;
+        cursor:pointer;
+        font-size: 5vw;
+        color:#191919;
+        font-weight: 700;
+    }
+    h1{
+        font-size: 8vw;
+        margin-bottom: 5%;
+    }
+    h2{
+        margin-top: 8%;
+        font-size: 10vw;
+    }
+    .winGIF{
+        width:40vw;
+        position:absolute;
+        right:35vw;
+        top:75%;
+        display:none;
+        transition:width 2s ease-in;
+    }
+}
